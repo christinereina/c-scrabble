@@ -15,12 +15,12 @@ namespace Scrabble.Tests
     }
 
     [TestMethod]
-    public void WordScore_CalculateScore_Int()
+    public void CalculateScore_WordScore_Int()
     {
-      string ScrabbleWord ="toe";
-      Word newWord = new Word(ScrabbleWord);
-      int score = newWord.CalculateScore();
-      Assert.AreEqual(3, score);
+      // string ScrabbleWord ="got";
+      Word newWord = new Word();
+      int score = newWord.WordScore("got");
+      Assert.AreEqual(4, score);
 
     }
 

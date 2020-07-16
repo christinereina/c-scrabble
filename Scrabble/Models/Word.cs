@@ -23,6 +23,10 @@ namespace Scrabble.Models
        {
            score += 3;
        }
+       else if (word[i] == 'f'  || word[i] == 'h' || word[i] == 'v'   || word[i] == 'w' || word[i] == 'y')
+       {
+           score += 4;
+       }
        else
        {
           score = 0;

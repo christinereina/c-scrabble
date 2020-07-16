@@ -15,7 +15,7 @@ namespace Scrabble.Tests
     }
 
     [TestMethod]
-    public void CalculateScore_WordScore_Int()
+    public void CalculateScore2_WordScore_Int()
     {
       Word newWord = new Word();
       int score = newWord.WordScore("got");
@@ -23,7 +23,14 @@ namespace Scrabble.Tests
 
     }
 
+    [TestMethod]
+    public void CalculateScore3_WordScore_Int()
+    {
+      Word newWord = new Word();
+      int score = newWord.WordScore("part");
+      Assert.AreEqual(6, score);
 
+    }
 
   }
 }

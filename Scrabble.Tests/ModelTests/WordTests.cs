@@ -14,5 +14,19 @@ namespace Scrabble.Tests
       Assert.AreEqual(typeof(Word), newWord.GetType());
     }
 
+    [TestMethod]
+    public void WordScore_CalculateScore_Int()
+    {
+      string ScrabbleWord ="toe";
+      Word newWord = new Word(ScrabbleWord);
+      int score = newWord.CalculateScore();
+      Assert.AreEqual(3, score);
+
+    }
+
+
+
   }
 }
+
+

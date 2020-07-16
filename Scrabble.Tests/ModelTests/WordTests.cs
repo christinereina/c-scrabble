@@ -32,6 +32,15 @@ namespace Scrabble.Tests
 
     }
 
+    [TestMethod]
+    public void CalculateScore4_WordScore_Int()
+    {
+      Word newWord = new Word();
+      int score = newWord.WordScore("home");
+      Assert.AreEqual(9, score);
+
+    }
+
   }
 }
 

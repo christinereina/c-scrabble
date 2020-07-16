@@ -1,7 +1,7 @@
 
 # _Scrabble_
 
-#### _Test-Driven Development With C# Project, July 15, 2020_
+#### _Test-Driven Development With C# Project, July 16, 2020_
 
 #### By _**Joseph Pearce, Christine Augustine**_
 
@@ -11,11 +11,13 @@ _A project to introduce the C# language and the .NET Core framework. Create a Sc
 
 ### Specs
 
-An application that takes a word and returns the Scrabble score for that word. 
+An application that takes a word and returns the Scrabble score for that word.
 
 | Behavior | Input | Output |  Completed(Y/N?)  |
 | -------- | ----- | ------ | -------- |
-|  If user enters a word, program returns a letter score  |  DOG |      5  |       Y   |
+|  If user enters a word, program returns a letter score  |  got |      4  |       Y  |
+|  If user enters a word, program returns a letter score  | part |      6  |       Y   |
+|  If user enters a word, program returns a letter score  | home |      9  |       Y   |
 
 
 ## Setup/Installation Requirements

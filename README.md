@@ -15,7 +15,7 @@ An application that takes a word and returns the Scrabble score for that word.
 
 | Behavior | Input | Output |  Completed(Y/N?)  |
 | -------- | ----- | ------ | -------- |
-|  If user enters a word, program returns a letter score  |  DOG |      5  |       N   |
+|  If user enters a word, program returns a letter score  |  DOG |      5  |       Y   |
 
 
 ## Setup/Installation Requirements

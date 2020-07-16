@@ -17,7 +17,6 @@ namespace Scrabble.Tests
     [TestMethod]
     public void CalculateScore_WordScore_Int()
     {
-      // string ScrabbleWord ="got";
       Word newWord = new Word();
       int score = newWord.WordScore("got");
       Assert.AreEqual(4, score);

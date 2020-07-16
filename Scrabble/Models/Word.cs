@@ -9,15 +9,24 @@ namespace Scrabble.Models
     {
       word = word.ToLower();
       int score = 0;
-      for (int i = 0; i < word.Length; i++) {
-        if (word[i] == 'a' || word[i] == 'e' || word[i] == 'i' || word[i] == 'o' || word[i] == 'u' || word[i] == 'u' || word[i] == 'l' || word[i] == 'n' || word[i] == 'r' || word[i] == 's'  || word[i] == 't' || word[i] == 'd' || word[i] == 'g') score++;
-        else
+      for (int i = 0; i < word.Length; i++) 
+      {
+        if (word[i] == 'a' || word[i] == 'e' || word[i] == 'i' || word[i] == 'o' || word[i] == 'u' || word[i] == 'u' || word[i] == 'l' || word[i] == 'n' || word[i] == 'r' || word[i] == 's'  || word[i] == 't') 
         {
+          score++;
+        }
+       else if (word[i] == 'd'  || word[i] == 'g')
+       {
+           score += 2;
+       }
+       else
+       {
           score = 0;
           break;
-        }
-        }         
-        return score;
-    }
+       }
+         
+      }
+      return score;
+    }           
   }
 }
